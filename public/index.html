@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="sm:bg-[url('../images/fondo-desktop.jpg')]  bg-[url('../images/fondo-mobile.jpg')]  bg-no-repeat	bg-center bg-cover">
+  <section class="flex justify-center items-center ">
+    <div class=" w-full h-screen flex justify-center items-center  ">
+      <div class=" w-full max-w-sm p-4 ">
+        <div class="bg-white rounded-lg shadow-lg p-4">
+          <div class="grid grid-cols-4 gap-4 mb-6 opacity-[0.8]">
+            <input type="text" aria-label="text"  placeholder="0" class=" col-span-4 text-blue-500 bg-gray-100 font-bold text-2xl text-end outline-none p-2 py-4  border rounded-md focus:border-blue-400 focus:ring
+            focus:ring-blue-500 my-4 focus:ring-offset-2 focus:ring-offset-white"
+              id="display" readonly>
+              <button class="outline-none col-span-2 p-2 text-white bg-blue-500 hover:bg-blue-600 shadow-lg  rounded-lg" onclick="clearDisplay()">C</button>
+              <button class="outline-none  p-2 text-white bg-blue-500 hover:bg-blue-600 shadow-lg  rounded-lg"
+              onclick="deleteLastCharacter()">&larr;</button>
+            <button class="outline-none p-2 text-white bg-blue-500 hover:bg-blue-600 shadow-lg rounded-lg" onclick="appendCharacter('+')">+</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg" onclick="appendCharacter('7')">7</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg" onclick="appendCharacter('8')">8</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg" onclick="appendCharacter('9')">9</button>
+            <button class="outline-none p-2 text-white bg-blue-500 hover:bg-blue-600 shadow-lg rounded-lg" onclick="appendCharacter('/')">&divide;</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg" onclick="appendCharacter('4')">4</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg" onclick="appendCharacter('5')">5</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg" onclick="appendCharacter('6')">6</button>
+            <button class="outline-none p-2 text-white bg-blue-500 hover:bg-blue-600 shadow-lg rounded-lg" onclick="appendCharacter('*')">&times;</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg" onclick="appendCharacter('1')">1</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg" onclick="appendCharacter('2')">2</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg" onclick="appendCharacter('3')">3</button>
+            <button class="outline-none p-2 text-white bg-blue-500 hover:bg-blue-600 shadow-lg rounded-lg" onclick="appendCharacter('-')">-</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg col-span-2" onclick="appendCharacter('0')">0</button>
+            <button class="outline-none p-2 text-gray-600 hover:text-gray-800 shadow-lg  rounded-lg" onclick="appendCharacter('.')">.</button>
+            <button class="outline-none  p-2 text-white bg-blue-500 hover:bg-blue-600 shadow-lg  rounded-lg" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script src="../script/index.js"></script>
+</body>
+</html>
