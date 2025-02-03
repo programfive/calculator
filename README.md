@@ -1,4 +1,4 @@
-# Calculadora con Tailwind CSS y JavaScript
+# Calculadora 
 
 ![Mockup de la aplicación](/images/calculator.png)
 
